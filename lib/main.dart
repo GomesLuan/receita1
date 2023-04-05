@@ -24,8 +24,28 @@ void main() {
             ]
           )          
         ),
-      bottomNavigationBar: Text("Botão 1"),
-    )
+      bottomNavigationBar: Row(
+        children: [
+          Spacer(),
+          IconButton( 
+            onPressed: () {},
+            icon: Icon(Icons.monetization_on),
+            color: Colors.deepPurple,
+          ),
+          Spacer(),
+          ElevatedButton(
+            child: Text('Ganhe R\$50.00'),
+            onPressed: () {}
+          ),
+          Spacer(),
+          FloatingActionButton(
+            onPressed: () {},
+            child: Icon(Icons.money)
+          ),
+          Spacer()
+        ]
+      )
+    ),
   );
   runApp(app);
 }
